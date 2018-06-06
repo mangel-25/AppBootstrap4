@@ -5,8 +5,28 @@ body {
     background-color: lightgray;
 }
 
+#menu {
+    list-style-type: none;        
+}
+
+li {
+    display: inline;
+    padding: 5px;    
+}
+
+li a {
+    color: white;
+    text-overflow: ellipsis;
+    overflow: initial;
+}
+ul {
+    background-color: black;
+    padding: 0 50px;
+}
+
 #titulo {
     text-align: center;
+    transition-delay: 1000ms;
 }
 
 .container {
@@ -80,4 +100,8 @@ input[type=text] {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+@media screen and (max-witdh=375px) {
+
 }
