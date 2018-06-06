@@ -1,0 +1,83 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: lightgray;
+}
+
+#titulo {
+    text-align: center;
+}
+
+.container {
+    width: 350px;
+    margin: auto; 
+    
+}
+
+label {    
+    font:bold;
+    font-size: 18px;
+}
+
+#imagen {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+form {border: 3px solid #f1f1f1; padding: 50px; background-color: white; border-radius: 20px}   
+
+a {
+    text-decoration: none;
+    cursor: pointer;    
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+
+input[type=text] {    
+    border:none;
+    border-bottom: 1px solid blue;
+    outline: none;   
+    box-sizing: border-box;     
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size:16px;    
+}
+
+::-moz-placeholder {
+    text-align: center;
+}
+::placeholder {
+    text-align: center;
+}
+
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px 20px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    width: 100%; 
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
