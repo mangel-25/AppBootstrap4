@@ -9,51 +9,55 @@
         <title>Login de usuario</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/micss.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-LlPOZK7jvvPEMrrhdqVlEYmX2u/GWKdcq/p7wuVYAUladqNeK7VN1PUZQDmiqlql" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/micss.css">
     </head>
-    <body>
+    <body class="jumbotron ml-100">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         
 
-        <div class="container">
+        <div class="container card bg-light ">
             <header>
-                <h1 id="titulo">Login de usuario</h1>
+                <h1 id="titulo" class="jumbotron-fluid">Login de usuario</h1>
             </header>
 
-            <nav>
-                <ul id="menu">
-                    <li><a href="#">Inicio</a> </li>
-                    <li><a href="#">Catálogo</a> </li>
-                    <li><a href="#">Quienes somos</a></li>
-                    <li><a href="#">Exit</a> </li>
+            <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+                <ul class="navbar-nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Catálogo</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Quienes somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Exit</a> </li>
                 </ul>
-            </nav>
+            </nav>            
 
 
-            <div id="login">
+            <div id="login" class="card-body">
                 
-                <form id="miform">
+                <form id="miform" class="form-control-lg">
 
                     <div>
-                        <img id="imagen" src="img/escritorio.jpg" alt="Escritorio">
+                        <img id="imagen" class="mx-auto d-block rounded img-fluid" src="img/escritorio.jpg" alt="Escritorio">
                     </div>
             
                             
                     <label for="miUser">Usuario</label><br>
-                    <input type="text" id="miUser" placeholder="Usuario" required autocomplete="false" autofocus>
+                    <input type="text" id="miUser" class="form-control form-control-lg form-text text-nowrap" placeholder="Usuario" required autocomplete="false" autofocus>
                     <br>
                     <label for="miPass">Contraseña</label><br>
-                    <input type="text" id="miPass" placeholder="Contraseña" required autocomplete="false">
-                    <br>
-                    <input type="submit" class="myButton" value="Aceptar">
+                    <input type="text" class="form-control form-control-lg" id="miPass" placeholder="Contraseña" required autocomplete="false">
+                    <br>                    
+                    <button class="btn btn-outline-danger mt-3 btn-block btn-lg">Aceptar</button>        
+                    
                     <br>
                     <input type="checkbox" name="Recordarme" id="michk" checked >Recordame en este equipo<br>
                     <div id="enlaces">
-                        <a href="https://www.google.es">He olvidado la contraseña</a>                        
+                        <a class="float-right" href="https://www.google.es">He olvidado la contraseña</a>                   
+                        <br>
                         <br>
                         <a href="https://www.google.es">Darse de alta</a>                        
 
@@ -62,7 +66,9 @@
 
             </div>
         </div>
-        
-        <script src="" async defer></script>
+                
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+
     </body>
 </html>
